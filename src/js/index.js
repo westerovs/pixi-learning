@@ -1,7 +1,6 @@
-const render = (container, template, place = 'beforeend') => {
-    if (container instanceof Element) {
-        container.insertAdjacentHTML(place, template)
-    }
-}
-console.log('test template')
+const app = new PIXI.Application({
+    width: 400,
+    height: 400
+});
+document.querySelector('.wrapper').appendChild(app.view);
 
