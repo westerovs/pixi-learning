@@ -6,5 +6,6 @@ npm-debug.log
 /.vscode
 /.git
 .idea
+desktop.ini
 /yarn-error.log
 /package-lock.json
