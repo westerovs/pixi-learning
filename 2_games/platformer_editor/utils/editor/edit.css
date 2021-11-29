@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+}
+
+.app {
+    width: 100vw;
+    height: 100vh;
+    max-width: 100vw;
+    max-height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    overflow: hidden;
+}
+
+.map-area {
+    overflow: auto;
+    background: #ccc;
+    /*display: grid;*/
+    /*align-items:center;*/
+    /*justify-content: center;*/
+}
+
+.map {
+    margin: 50px;
+    background: #fff;
+    border: 1px solid #666;
+}
+
+.tools {
+    border-left: 1px solid #888;
+    overflow: auto;
+}
+
+.tools > * {
+    display: block;
+}
+
+.tools > * + * {
+    margin-top: 1em;
+}
+
+label {
+    padding: 0 1em;
+    display: block;
+}
+
+#alpha {
+    /* display: none; */
+}

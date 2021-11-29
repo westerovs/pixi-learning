@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>EDITOR LEVEL</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="./edit.css">
+  <link rel="shortcut icon" href="#" type="image/x-icon">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.5.1/pixi.min.js"></script>
+</head>
+<body>
+
+<div class="app">
+	<div class="map-area">
+		<canvas class="map"></canvas>
+	</div>
+	<div class="tools">
+		<canvas class="tiles"></canvas>
+		<form onsubmit="return false;" class="layer">
+			<label><input type="radio" name="layer" value="sky"> sky</label>
+			<label><input type="radio" name="layer" value="background"> background</label>
+			<label><input type="radio" name="layer" value="stage"> stage</label>
+			<label><input type="radio" name="layer" value="collision"> collision</label>
+		</form>
+		<button class="copy">
+			copy map data
+		</button>
+		<pre></pre>
+	</div>
+</div>
+
+<script src="edit.js"></script>
+</body>
+</html>
